@@ -1,0 +1,19 @@
+default: &default
+  adapter: mysql2
+  pool: 5
+  timeout: 5000
+  username: username
+  password: password
+  host: localhost
+
+development:
+  <<: *default
+  database: sample_rails_app_development
+
+test:
+  <<: *default
+  database: sample_rails_app_test
+
+production:
+  <<: *default
+  database: sample_rails_app_production
