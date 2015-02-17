@@ -2,11 +2,11 @@
 working_directory "/var/www/sample_rails_app"
 
 # Unicorn PID file location
-pid "/var/www/sample_rails_app/pids/unicorn.pid"
+pid "/var/www/sample_rails_app/tmp/pids/unicorn.pid"
 
 # Path to logs
-stderr_path "/var/www/sample_rails_app/log/unicorn.log"
-stdout_path "/var/www/sample_rails_app/log/unicorn.log"
+stderr_path "/var/www/sample_rails_app/tmp/log/unicorn.log"
+stdout_path "/var/www/sample_rails_app/tmp/log/unicorn.log"
 
 # Unicorn socket
 listen "/tmp/unicorn.myapp.sock"
