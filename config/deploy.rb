@@ -27,13 +27,19 @@ set :branch, 'capistrano'
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml')
 
 # Default value for linked_dirs is []
-# set :linked_dirs, fetch(:linked_dirs, []).push('bin', 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
+set :linked_dirs, fetch(:linked_dirs, []).push('bin', 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
 
 # Default value for default_env is {}
-# set :default_env, { path: "/opt/ruby/bin:$PATH" }
+# set :default_env, { path: "~/.rbenv/shims:~/.rbenv/bin:$PATH" }
+set :rbenv_ruby, '2.1.1'
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
+
+# Env variables
+set :default_env, {
+  'SECRET_KEY_BASE' => '385c83303836f7891dd4c9456652bf84c53999dfcf01bab8a8812464dfc957faa08ef6629db422ad8b84c07e0d4ed7d743ac28639a117d083355cf8c3b2362a8'
+}
 
 namespace :deploy do
 
