@@ -29,6 +29,10 @@ capybara-*.html
 rerun.txt
 .capistrano
 
+# Ignore config files
+/config/database.yml
+/config/secrets.yml
+
 ### OS temporary files
 
 ## Mac OS X
