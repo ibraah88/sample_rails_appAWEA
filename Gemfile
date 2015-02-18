@@ -34,6 +34,7 @@ group :development do
   gem 'capistrano-rails'
   gem 'capistrano-unicorn-nginx'
   gem 'capistrano-rbenv'
+  gem 'capistrano-secrets-yml'
 end
 
 group :development, :test do
