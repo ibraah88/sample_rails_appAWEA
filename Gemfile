@@ -50,3 +50,11 @@ end
   gem 'capistrano-rails'
 
 end
+
+group :development do
+  gem 'capistrano', '~> 3.3.5'
+  gem 'capistrano-unicorn-nginx', '~> 3.2.0'
+end
+
+gem 'capistrano-rbenv'
+
