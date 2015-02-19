@@ -3,6 +3,7 @@ lock '3.3.5'
 
 set :application, 'my_app'
 set :repo_url, 'git@github.com:Awea/sample_rails_app.git'
+set :default_env, { path: "~/.rbenv/shims:~/.rbenv/bin:$PATH" }
 
 # Default branch is :master
 #ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
