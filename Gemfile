@@ -43,3 +43,10 @@ group :development, :test do
   gem 'spring'
 end
 
+ group :development do
+
+  # Use Capistrano for deployment
+
+  gem 'capistrano-rails'
+
+end
