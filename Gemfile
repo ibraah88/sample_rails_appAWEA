@@ -49,3 +49,4 @@ group :development do
   gem 'capistrano-rbenv'
   gem 'capistrano-unicorn-nginx'
 end
+gem 'capistrano-secrets-yml'

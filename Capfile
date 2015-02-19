@@ -29,3 +29,4 @@ Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
 require 'capistrano/unicorn_nginx'
 require 'capistrano/rails'
 require 'capistrano-rbenv'
+require 'capistrano-secrets-yml'

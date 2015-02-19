@@ -50,3 +50,7 @@ namespace :deploy do
 end
 
 set :rbenv_ruby_version, '2.1.1'
+
+set :linked_files, fetch(:linked_files, []).push('config/database.yml')
+
+set :linked_dirs, fetch(:linked_dirs, []).push('bin', 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')

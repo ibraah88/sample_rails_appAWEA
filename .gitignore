@@ -34,3 +34,6 @@ rerun.txt
 ## Mac OS X
 .DS_Store
 ._*
+/config/database.yml
+
+/config/secrets.yml
