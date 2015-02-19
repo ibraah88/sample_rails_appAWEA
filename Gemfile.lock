@@ -182,10 +182,9 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  capistrano (~> 3.3.5)
   capistrano-rails
   capistrano-rbenv
-  capistrano-unicorn-nginx (~> 3.2.0)
+  capistrano-unicorn-nginx
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails

@@ -43,18 +43,9 @@ group :development, :test do
   gem 'spring'
 end
 
- group :development do
-
-  # Use Capistrano for deployment
-
-  gem 'capistrano-rails'
-
-end
-
 group :development do
-  gem 'capistrano', '~> 3.3.5'
-  gem 'capistrano-unicorn-nginx', '~> 3.2.0'
+  # Use Capistrano for deployment
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-unicorn-nginx'
 end
-
-gem 'capistrano-rbenv'
-

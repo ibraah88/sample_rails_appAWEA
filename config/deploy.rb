@@ -9,7 +9,7 @@ set :repo_url, 'git@github.com:Awea/sample_rails_app.git'
 set :branch, 'atm'
 
 # Default deploy_to directory is /var/www/my_app_name
- set :deploy_to, '/var/www/my_app'
+set :deploy_to, '/var/www/my_app'
 
 # Default value for :scm is :git
 # set :scm, :git
@@ -48,6 +48,4 @@ namespace :deploy do
 
 end
 
-# config/deploy.rb
-require "capistrano-rbenv"
 set :rbenv_ruby_version, '2.1.1'
