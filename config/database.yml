@@ -2,9 +2,9 @@ default: &default
   adapter: mysql2
   pool: 5
   timeout: 5000
-  username: atmosfeel
+  username: root
   password: passer@X86
-  host: 10.0.2.15
+  host: localhost
 
 development:
   <<: *default
